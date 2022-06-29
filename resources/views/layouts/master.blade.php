@@ -24,6 +24,6 @@
 	    <div id="root">
 	        <router-view></router-view>
 	    </div>
-	    <script src="/electionmonitor/js/bundle.min.js"></script>
+	    <script src="/js/bundle.min.js"></script>
 	</body>
 </html>
