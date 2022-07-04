@@ -125,7 +125,7 @@
                      this.loading = false
                     // toastr['success'](response.message);
                     // this.$emit('completed',response.a)
-                    this.$router.push('/surveys');
+                    this.$router.push('/electionmonitor/surveys');
                 })
                 .catch(response => {
                      this.loading = false
@@ -156,7 +156,7 @@
                     if(response.type == 'error') {
                         // toastr['error'](response.message);
                     }else {
-                        this.$router.push('/surveys');
+                        this.$router.push('/electionmonitor/surveys');
                     }
                 })
                 .catch(response => {

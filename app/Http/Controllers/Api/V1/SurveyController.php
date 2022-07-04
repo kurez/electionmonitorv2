@@ -163,7 +163,8 @@ class SurveyController extends APIController
 		foreach ($request->input('label') as $k => $v) {
 			$i = 0 ;
 			while($i == 0){
-			$k = substr(str_shuffle(str_repeat($x='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(5/strlen($x)) )),1,5);
+			// $k = substr(str_shuffle(str_repeat($x='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(5/strlen($x)) )),1,5);
+               
 				if(!isset($arr[$k]))
 					$i = 1;
 					}
@@ -194,7 +195,7 @@ class SurveyController extends APIController
         }
         
 
-           /**
+     /**
      * update question
      *
      * @return response()
@@ -221,6 +222,23 @@ class SurveyController extends APIController
 		}else {
 		 return response()->json(['status' => 'Failed','message' => 'Survey was not updated']);
 		 }
+         
+    }
+
+    /**
+     * answer question
+     *
+     * @return response()
+     */
+    public function answerQuestion(Request $request)
+    {
+
+          // foreach($request->all() as $key => $value) 
+          // {
+
+          // }
+
+          return $request->all();
          
     }
     /**

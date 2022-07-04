@@ -13,7 +13,7 @@
 
         <div class="row">
             <div class="py-4">              
-                <md-button class="btn bg-gray-800" style="color: #FFF;border-radius: 4px" to="/add-survey">New Survey</md-button>  
+                <md-button class="btn bg-gray-800" style="color: #FFF;border-radius: 4px" to="/electionmonitor/add-survey">New Survey</md-button>  
             </div>
             <div class="col-lg-12">
                 <div class="mb-4 card">
@@ -223,7 +223,7 @@
                 this.searched = searchByFilter(this.surveys, this.search)
             },
             editSurvey(survey){
-                this.$router.push('/edit-survey/'+survey.id+'/edit');
+                this.$router.push('/electionmonitor/edit-survey/'+survey.id+'/edit');
             },
        
         },

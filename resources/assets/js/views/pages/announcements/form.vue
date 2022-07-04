@@ -97,7 +97,7 @@
                      this.loading = false
                     // toastr['success'](response.message);
                     // this.$emit('completed',response.a)
-                    this.$router.push('/announcements');
+                    this.$router.push('/electionmonitor/announcements');
                 })
                 .catch(response => {
                      this.loading = false
@@ -127,7 +127,7 @@
                     if(response.type == 'error') {
                         // toastr['error'](response.message);
                     }else {
-                        this.$router.push('/announcements');
+                        this.$router.push('/electionmonitor/announcements');
                     }
                 })
                 .catch(response => {

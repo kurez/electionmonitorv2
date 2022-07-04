@@ -13,7 +13,7 @@
 
         <div class="row">
             <div class="py-4">              
-                <md-button class="btn bg-gray-800" style="color: #FFF;border-radius: 4px" to="/add-announcement">New Announcement</md-button>  
+                <md-button class="btn bg-gray-800" style="color: #FFF;border-radius: 4px" to="/electionmonitor/add-announcement">New Announcement</md-button>  
             </div>
             <div class="col-lg-12">
                 <div class="mb-4 card">
@@ -220,7 +220,7 @@
                 this.searched = searchByFilter(this.announcements, this.search)
             },
             editAnnouncement(announcement){
-                this.$router.push('/edit-announcement/'+announcement.id+'/edit');
+                this.$router.push('/electionmonitor/edit-announcement/'+announcement.id+'/edit');
             },
        
         },

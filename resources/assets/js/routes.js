@@ -177,7 +177,7 @@ router.beforeEach((to, from, next) => {
     if (to.matched.some(m => m.meta.requiresGuest)){
         return helper.check().then(response => {
             if(response){
-                return next({ path : '/'})
+                return next({ path : '/electionmonitor/'})
             }
 
             return next()
